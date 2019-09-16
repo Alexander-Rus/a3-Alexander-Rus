@@ -25,7 +25,7 @@ For some reason when running the code using node.js locally, the projet works fi
 - **Tech Achievement 5**: I used ejs as the layouts for the pages instead of 
 
 ### Design/Evaluation Achievements
-- **Design Achievement 1**: II used ejs formatt instead of html files for this assingment. (I had to additionally use express-ejs-layouts for this.)
+- **Design Achievement 1**: I used ejs formatt instead of html files for this assingment. (I had to additionally use express-ejs-layouts for this.)
 - **Design Achievement 2**: I used best practices when writing HTML. I used header tags properly, i included alt tags, and I sized indivual elements.
 - **Design Achievement 3**: I used the bootstrap css framework, specificall jumbotron to give my webpage a unique design.
 
