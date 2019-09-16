@@ -1,0 +1,127 @@
+{
+    "users": [
+      {
+        "username": "user",
+        "id": "91d86b2f-f165-4a3a-bfd8-1aeccdf86a80",
+        "password": "$2a$10$3dV0t7/V4jVoX6BDmdU7auY1GuyxeP31TeqITT4LrCnieveZECuV6"
+      },
+      {
+        "username": "clay",
+        "id": "81e02ef5-50b1-4de2-aba1-5b933014f968",
+        "password": "$2a$10$rzuPCNNkgLGeS18O9r0GyuzS1J0NMZI0NLbtxDjl8oy9sbWyE8n9i"
+      },
+      {
+        "username": "johny",
+        "id": "762b773a-4690-4215-aed3-d3aeb91f328d",
+        "password": "$2a$10$XDmgP8eIMN/rkUby0aZh3OoTKXNaCvp8A1fpUyDNHYFfV6dmG1MA2"
+      }
+    ],
+    "songs": [
+      {
+        "title": "Where are you ",
+        "id": "35f22ef1-d5b3-4c8f-b7ec-614c8c2367dd",
+        "author_id": "I'm so sorry"
+      },
+      {
+        "title": "Boom Boom Boom",
+        "id": "855d4e93-9331-4622-8de8-c92eafa57cd5",
+        "author_id": "Black eyed Peas"
+      },
+      {
+        "title": "uuu",
+        "id": "6f83fa51-8508-4f22-b85a-3497d149a33e",
+        "author_id": "iii"
+      },
+      {
+        "title": "BBB",
+        "id": "d69df0f8-366a-4524-99b7-8a6e1c17ce33",
+        "author_id": "you"
+      },
+      {
+        "title": "You don't know me",
+        "id": "9d4abd2d-1c14-4059-8a6c-1867f3fe332f",
+        "author_id": "Neo"
+      },
+      {
+        "title": "She is cool",
+        "id": "a854dcee-e221-41d5-bb87-db8d560228fe",
+        "author_id": "p"
+      }
+    ],
+    "authors": [
+      {
+        "id": "1",
+        "name": "author one"
+      },
+      {
+        "id": "2",
+        "name": "author two"
+      },
+      {
+        "author_id": "Unknown"
+      },
+      {
+        "author_id": "I'm so sorry"
+      },
+      {
+        "author_id": ""
+      },
+      {
+        "author_id": "Black Eyed Peas"
+      },
+      {
+        "author_id": "Ya"
+      },
+      {
+        "author_id": "Black eyed Peas"
+      },
+      {
+        "author_id": "yes"
+      },
+      {
+        "author_id": ""
+      },
+      {
+        "author_id": "Black Eyed Peas"
+      },
+      {
+        "author_id": "p"
+      },
+      {
+        "author_id": "p"
+      },
+      {
+        "author_id": "p"
+      },
+      {
+        "author_id": "p"
+      },
+      {
+        "author_id": "d"
+      },
+      {
+        "author_id": "h"
+      },
+      {
+        "author_id": "k"
+      },
+      {
+        "author_id": "l"
+      },
+      {
+        "author_id": "you"
+      },
+      {
+        "author_id": "Neo"
+      },
+      {
+        "author_id": "Alex Rus"
+      },
+      {
+        "author_id": "Alex Rus"
+      },
+      {
+        "author_id": "p"
+      }
+    ]
+  }

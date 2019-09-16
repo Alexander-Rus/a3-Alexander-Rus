@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="Jumbotron">
+          <h1 style="font-size: 40px; text-align: center;">Music</h1>
+          <p style="text-align: center;">The songs in your collection</p>
+          <ul style="font-size: 20px">
+            <% songs.forEach(function(song) { %>
+              <li><a href="/songs/<%= song.id %>"><%= song.title %></a></li>
+            <% }) %>
+          </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="Jumbotron">
+          <h1 style="font-size: 30px; text-align: center;">New Song</h1>
+          <p style="text-align: center;">Enter the name of a song and artist that you wish to add, then click "Submit"</p>
+          <form action="/createSong" method="post">
+            <div class="form-group">
+              <label for="title">Song Name</label>
+              <input type="text" class="form-control" name="title" id="title">
+            </div>
+            <div class="form-group">
+              <label for="title">Artist</label>
+              <input type="text" class="form-control" name="author_id" id=author>
+            </div>
+            <input type="submit" class="btn btn-primary">
+          </form>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class = "container">
+      <div class="Jumbotron">
+          <h1 style="font-size: 30px; text-align: center;">Delete Song</h1>
+          <p style="text-align: center;">Enter the name of a song you wish to delete and click "Submit"</p>
+            <form action="/I_am_trying" method="post">
+              <div class="form-group">
+                <label for="title">Song Name</label>
+                <input type="text" class="form-control" name="title" id="title">
+              </div>
+              <input type="submit" class="btn btn-primary">
+            </form>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="Jumbotron">
+        <h1 style="font-size: 30px; text-align: center;">Modify Song</h1>
+        <p style="text-align: center;">Enter the name of a song you wish to modify, the new name and artist you would like to give it, and click "Submit"</p>
+        <form action="/I_cry_tears_of_pain" method="post">
+          <div class="form-group">
+            <label for="title">Original Song Name</label>
+            <input type="text" class="form-control" name="title" id="title">
+          </div>
+          <div class="form-group">
+              <label for="title">New Song Name</label>
+              <input type="text" class="form-control" name="new_song" id="title">
+          </div>
+          <div class="form-group">
+                <label for="title">New Artist</label>
+                <input type="text" class="form-control" name="new_artist" id="title">
+          </div>
+          <input type="submit" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
