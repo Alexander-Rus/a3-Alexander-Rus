@@ -17,22 +17,40 @@ router.get('/', function(req, res) {
 router.get('/songs', function(req, res) {
   var songs = db.get('songs').value()
   var authors = db.get('authors').value()
-
-  res.render('songs', { songs: songs, authors: authors })
+  var users = db.get('users').value()
+  console.log("***", users)
+  var userID =  db.get('users').find({ id: req.user.id }).value();
+  res.render('songs', { songs: songs, authors: authors, users: users, userID: userID})
 })
 
+
+var test = "This is a test"
 router.post('/createSong', function(req, res) {
   var title = req.body.title;
   var author_id = req.body.author_id;
-
+  console.log(test)
   db.get('songs')
-    .push({title: title, id: uuid(), author_id: author_id})
+    .push({title: title,
+       id: uuid(),
+        author_id: author_id})
     .write()
 
   db.get('authors')
     .push({author_id: author_id})
     .write()  
 
+  var user =  db.get('users').find({ id: req.user.id }).value();  
+  var username = user.username
+  var userSongs = user.songs
+  userSongs.push(title) 
+  console.log("$$$$$", userSongs)
+  var sample = "Test3"
+  db.get('users')
+  .find({username: username})
+  .assign({songs: userSongs })
+  .write()
+  console.log("&&&&", user.username)
+  console.log("^^^^")
   res.redirect('/songs')
 })
 
@@ -45,7 +63,24 @@ router.post('/I_am_trying', function(req, res) {
   .remove({title: title})
   .write()
 
-  res.render("home")
+
+  var user =  db.get('users').find({ id: req.user.id }).value();
+  var username = user.username
+  var userSongs = user.songs
+
+  for( var i = 0; i < userSongs.length; i++){ 
+    if ( userSongs[i] === title) {
+      userSongs.splice(i, 1); 
+    }
+  }
+
+  db.get('users')
+  .find({username: username})
+  .assign({songs: userSongs })
+  .write()
+  
+
+  res.redirect('/songs')
 
 })
 
@@ -63,18 +98,42 @@ router.post('/I_cry_tears_of_pain', function(req, res) {
   .assign({title: new_title, author_id: new_artist})
   .write()
 
-  res.render("home")
+  var user =  db.get('users').find({ id: req.user.id }).value();
+  var username = user.username
+  var userSongs = user.songs
+
+  var ind = userSongs.indexOf(title)
+  console.log("7777", ind)
+
+  userSongs[ind] = new_title
+  db.get('users')
+  .find({username: username})
+  .assign({songs: userSongs })
+  .write()
+
+  
+
+
+  res.redirect('/songs')
 
 })
 
 router.get('/songs/:id', function(req, res) {
   var song = db.get('songs').find({ id: req.params.id }).value()
-  console.log(song)
   var author;
   if(song) {
     author = db.get('authors').find({ id: song.author_id }).value()
   }
   res.render('song', { song: song || {}, author: author || {}})
+})
+
+router.get('/user/:id', function(req, res) {
+  var user = db.get('users').find({ id: req.params.id }).value()
+  console.log(user)
+  if(user) {
+    password = db.get('users').find({ id: user.password }).value()
+  }
+  res.render('user', { user: user || {}, password: password || {}})
 })
 
 var createAccount = path.join('authorize', 'signup');

@@ -8,6 +8,7 @@ var path = require('path');
 
 var db = low(path.join('data', 'db.json'));
 
+//This encrypts the password
 function creatPassword(password) {
   var s = bcrypt.genSaltSync(10);
   return bcrypt.hashSync(password, s);
@@ -26,7 +27,8 @@ exports.signup = function signup(options, res) {
       .push({
         username: options.username,
         id: uuid(), //make an ID number
-        password: creatPassword(options.password)
+        password: creatPassword(options.password),
+        songs: []
       })
       .write()
     res.redirect(options.successRedirectUrl)

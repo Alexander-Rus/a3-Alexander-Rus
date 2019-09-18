@@ -1,127 +1,287 @@
 {
-    "users": [
-      {
-        "username": "user",
-        "id": "91d86b2f-f165-4a3a-bfd8-1aeccdf86a80",
-        "password": "$2a$10$3dV0t7/V4jVoX6BDmdU7auY1GuyxeP31TeqITT4LrCnieveZECuV6"
-      },
-      {
-        "username": "clay",
-        "id": "81e02ef5-50b1-4de2-aba1-5b933014f968",
-        "password": "$2a$10$rzuPCNNkgLGeS18O9r0GyuzS1J0NMZI0NLbtxDjl8oy9sbWyE8n9i"
-      },
-      {
-        "username": "johny",
-        "id": "762b773a-4690-4215-aed3-d3aeb91f328d",
-        "password": "$2a$10$XDmgP8eIMN/rkUby0aZh3OoTKXNaCvp8A1fpUyDNHYFfV6dmG1MA2"
-      }
-    ],
-    "songs": [
-      {
-        "title": "Where are you ",
-        "id": "35f22ef1-d5b3-4c8f-b7ec-614c8c2367dd",
-        "author_id": "I'm so sorry"
-      },
-      {
-        "title": "Boom Boom Boom",
-        "id": "855d4e93-9331-4622-8de8-c92eafa57cd5",
-        "author_id": "Black eyed Peas"
-      },
-      {
-        "title": "uuu",
-        "id": "6f83fa51-8508-4f22-b85a-3497d149a33e",
-        "author_id": "iii"
-      },
-      {
-        "title": "BBB",
-        "id": "d69df0f8-366a-4524-99b7-8a6e1c17ce33",
-        "author_id": "you"
-      },
-      {
-        "title": "You don't know me",
-        "id": "9d4abd2d-1c14-4059-8a6c-1867f3fe332f",
-        "author_id": "Neo"
-      },
-      {
-        "title": "She is cool",
-        "id": "a854dcee-e221-41d5-bb87-db8d560228fe",
-        "author_id": "p"
-      }
-    ],
-    "authors": [
-      {
-        "id": "1",
-        "name": "author one"
-      },
-      {
-        "id": "2",
-        "name": "author two"
-      },
-      {
-        "author_id": "Unknown"
-      },
-      {
-        "author_id": "I'm so sorry"
-      },
-      {
-        "author_id": ""
-      },
-      {
-        "author_id": "Black Eyed Peas"
-      },
-      {
-        "author_id": "Ya"
-      },
-      {
-        "author_id": "Black eyed Peas"
-      },
-      {
-        "author_id": "yes"
-      },
-      {
-        "author_id": ""
-      },
-      {
-        "author_id": "Black Eyed Peas"
-      },
-      {
-        "author_id": "p"
-      },
-      {
-        "author_id": "p"
-      },
-      {
-        "author_id": "p"
-      },
-      {
-        "author_id": "p"
-      },
-      {
-        "author_id": "d"
-      },
-      {
-        "author_id": "h"
-      },
-      {
-        "author_id": "k"
-      },
-      {
-        "author_id": "l"
-      },
-      {
-        "author_id": "you"
-      },
-      {
-        "author_id": "Neo"
-      },
-      {
-        "author_id": "Alex Rus"
-      },
-      {
-        "author_id": "Alex Rus"
-      },
-      {
-        "author_id": "p"
-      }
-    ]
-  }
+  "users": [
+    {
+      "username": "user",
+      "id": "91d86b2f-f165-4a3a-bfd8-1aeccdf86a80",
+      "password": "$2a$10$3dV0t7/V4jVoX6BDmdU7auY1GuyxeP31TeqITT4LrCnieveZECuV6",
+      "songs": "x, y, z"
+    },
+    {
+      "username": "clay",
+      "id": "81e02ef5-50b1-4de2-aba1-5b933014f968",
+      "password": "$2a$10$rzuPCNNkgLGeS18O9r0GyuzS1J0NMZI0NLbtxDjl8oy9sbWyE8n9i",
+      "songs": "x, y, z"
+    },
+    {
+      "username": "johny",
+      "id": "762b773a-4690-4215-aed3-d3aeb91f328d",
+      "password": "$2a$10$XDmgP8eIMN/rkUby0aZh3OoTKXNaCvp8A1fpUyDNHYFfV6dmG1MA2",
+      "songs": "x, y, z"
+    },
+    {
+      "username": "samsung",
+      "id": "a8b6cb0c-2e81-4127-bd6b-05dd761180c4",
+      "password": "$2a$10$xDMnQRw3GJQRqqfT0aVfVuaB.B.yOyTFAUYiO0ODmNtDdO1oxM0ZO",
+      "songs": [
+        "song1",
+        "song2",
+        "song3"
+      ]
+    },
+    {
+      "username": "billy",
+      "id": "43da214e-47da-4f56-94e9-23d10ad63703",
+      "password": "$2a$10$hm7ELou9eQvhgXVkvztk9.QXYTq2IFmJbcHU2PQ8N2uCBK0rKSmlK",
+      "songs": [
+        "bangarang"
+      ]
+    }
+  ],
+  "songs": [
+    {
+      "title": "Where are you ",
+      "id": "35f22ef1-d5b3-4c8f-b7ec-614c8c2367dd",
+      "author_id": "I'm so sorry"
+    },
+    {
+      "title": "Boom Boom Boom",
+      "id": "855d4e93-9331-4622-8de8-c92eafa57cd5",
+      "author_id": "Black eyed Peas"
+    },
+    {
+      "title": "uuu",
+      "id": "6f83fa51-8508-4f22-b85a-3497d149a33e",
+      "author_id": "iii"
+    },
+    {
+      "title": "BBB",
+      "id": "d69df0f8-366a-4524-99b7-8a6e1c17ce33",
+      "author_id": "you"
+    },
+    {
+      "title": "She is cool",
+      "id": "a854dcee-e221-41d5-bb87-db8d560228fe",
+      "author_id": "p"
+    },
+    {
+      "title": "Killer Queen ",
+      "id": "055f182c-a0ff-4893-a919-386980eae023",
+      "author_id": "Killer Queen"
+    },
+    {
+      "title": "Harry Potter",
+      "id": "5f964f7c-f196-4a44-b22b-8b162a3943d7",
+      "author_id": "Bob Dylan"
+    },
+    {
+      "title": "She is fool",
+      "id": "b5408e67-be45-4955-b05b-69fab0e49580",
+      "author_id": "f"
+    },
+    {
+      "title": "tree",
+      "id": "6a78db2f-bdef-4c9b-a9e6-b36021e68ac1",
+      "author_id": "tree"
+    },
+    {
+      "title": "help",
+      "id": "7e245176-ae87-4a06-a9f6-cfc5af498590",
+      "author_id": "beatles"
+    },
+    {
+      "title": "tea",
+      "id": "b4b6de84-c047-477a-bd99-a2d1e9c35b57",
+      "author_id": "tea"
+    },
+    {
+      "title": "good vibrations",
+      "id": "ba578aee-8f0f-46d6-a5e9-df8830f1d499",
+      "author_id": "beach boys"
+    },
+    {
+      "title": "cartoon",
+      "id": "f5f67e4b-92ec-47d8-8bee-85e7658f5229",
+      "author_id": "something"
+    },
+    {
+      "title": "bangarang",
+      "id": "63a570ad-5fa8-441e-a40a-36c230cebcfd",
+      "author_id": "skrillex"
+    }
+  ],
+  "authors": [
+    {
+      "id": "1",
+      "name": "author one"
+    },
+    {
+      "id": "2",
+      "name": "author two"
+    },
+    {
+      "author_id": "Unknown"
+    },
+    {
+      "author_id": "I'm so sorry"
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": "Black Eyed Peas"
+    },
+    {
+      "author_id": "Ya"
+    },
+    {
+      "author_id": "Black eyed Peas"
+    },
+    {
+      "author_id": "yes"
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": "Black Eyed Peas"
+    },
+    {
+      "author_id": "p"
+    },
+    {
+      "author_id": "p"
+    },
+    {
+      "author_id": "p"
+    },
+    {
+      "author_id": "p"
+    },
+    {
+      "author_id": "d"
+    },
+    {
+      "author_id": "h"
+    },
+    {
+      "author_id": "k"
+    },
+    {
+      "author_id": "l"
+    },
+    {
+      "author_id": "you"
+    },
+    {
+      "author_id": "Neo"
+    },
+    {
+      "author_id": "Alex Rus"
+    },
+    {
+      "author_id": "Alex Rus"
+    },
+    {
+      "author_id": "p"
+    },
+    {
+      "author_id": "Killer Queen"
+    },
+    {
+      "author_id": "I don't know"
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": "Bob Dylan"
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": ""
+    },
+    {
+      "author_id": "f"
+    },
+    {
+      "author_id": "tree"
+    },
+    {
+      "author_id": "beatles"
+    },
+    {
+      "author_id": "tea"
+    },
+    {
+      "author_id": "beach boys"
+    },
+    {
+      "author_id": "beach boys"
+    },
+    {
+      "author_id": "Katy Perry"
+    },
+    {
+      "author_id": "a"
+    },
+    {
+      "author_id": "b"
+    },
+    {
+      "author_id": "c"
+    },
+    {
+      "author_id": "a"
+    },
+    {
+      "author_id": "blah"
+    },
+    {
+      "author_id": "lauv"
+    }
+  ]
+}
