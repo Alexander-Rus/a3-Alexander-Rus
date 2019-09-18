@@ -52,6 +52,22 @@
       "songs": [
         "No Songs yet ... "
       ]
+    },
+    {
+      "username": "user1",
+      "id": "051a55ad-6744-4fc7-b430-72332ce0fdec",
+      "password": "$2a$10$3of5Jt6NJ3/JfhGVAQYKgu4zRrHn.nXCFdFcWxk2zseRHUMb7aalq",
+      "songs": [
+        "No Songs yet ... "
+      ]
+    },
+    {
+      "username": "user2",
+      "id": "deae6ae5-7f5d-4e2b-83cd-74d5f98ea7c0",
+      "password": "$2a$10$C1VJO/pUoxyRogE2OJDfE.pzq28jFgZozBk31eM1U3l3knFMnjePC",
+      "songs": [
+        "No Songs yet ... "
+      ]
     }
   ],
   "songs": [
@@ -165,6 +181,9 @@
     },
     {
       "author_id": "Black Eyed Peas"
+    },
+    {
+      "author_id": "Flo Rida"
     }
   ]
 }
