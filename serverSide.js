@@ -18,9 +18,11 @@ router.get('/songs', function(req, res) {
   var songs = db.get('songs').value()
   var authors = db.get('authors').value()
   var users = db.get('users').value()
-  console.log("***", users)
   var userID =  db.get('users').find({ id: req.user.id }).value();
-  res.render('songs', { songs: songs, authors: authors, users: users, userID: userID})
+  console.log("7777", userID)
+  console.log("****", users)
+  ID = userID.id
+  res.render('songs', { songs: songs, authors: authors, users: users, userID: userID, ID: ID})
 })
 
 
@@ -42,7 +44,13 @@ router.post('/createSong', function(req, res) {
   var user =  db.get('users').find({ id: req.user.id }).value();  
   var username = user.username
   var userSongs = user.songs
-  userSongs.push(title) 
+  console.log("#####", userSongs)
+  if(userSongs == ["No Songs yet ... "]){
+    userSongs = title
+  } else {
+    userSongs.push(title) 
+  }
+
   console.log("$$$$$", userSongs)
   var sample = "Test3"
   db.get('users')
