@@ -28,7 +28,7 @@ exports.signup = function signup(options, res) {
         username: options.username,
         id: uuid(), //make an ID number
         password: creatPassword(options.password),
-        songs: ['No Songs yet ... ']
+        songs: []
       })
       .write()
     res.redirect(options.successRedirectUrl)

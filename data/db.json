@@ -68,6 +68,12 @@
       "songs": [
         "No Songs yet ... "
       ]
+    },
+    {
+      "username": "user3",
+      "id": "db595edc-713d-4c52-9d4e-8461b5ccdaee",
+      "password": "$2a$10$o3A/5X2Q/DBZvOKR1z.uReT7Hs76tRE4hXsCoZxY9k3D8kY/OHFJK",
+      "songs": []
     }
   ],
   "songs": [

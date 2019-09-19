@@ -15,19 +15,18 @@ router.get('/', function(req, res) {
 })
 
 router.get('/songs', function(req, res) {
+  var db = lowDB(path.join('data', 'db.json'));
   var songs = db.get('songs').value()
   var authors = db.get('authors').value()
   var users = db.get('users').value()
   var userID =  db.get('users').find({ id: req.user.id }).value();
-  console.log("7777", userID)
-  console.log("****", users)
-  ID = userID.id
-  res.render('songs', { songs: songs, authors: authors, users: users, userID: userID, ID: ID})
+  res.render('songs', { songs: songs, authors: authors, users: users, userID: userID})
 })
 
 
 var test = "This is a test"
 router.post('/createSong', function(req, res) {
+  var db = lowDB(path.join('data', 'db.json'));
   var title = req.body.title;
   var author_id = req.body.author_id;
   console.log(test)
@@ -45,11 +44,8 @@ router.post('/createSong', function(req, res) {
   var username = user.username
   var userSongs = user.songs
   console.log("#####", userSongs)
-  if(userSongs == ["No Songs yet ... "]){
-    userSongs = title
-  } else {
-    userSongs.push(title) 
-  }
+
+  userSongs.push(title) 
 
   console.log("$$$$$", userSongs)
   var sample = "Test3"
@@ -63,6 +59,7 @@ router.post('/createSong', function(req, res) {
 })
 
 router.post('/I_am_trying', function(req, res) {
+  var db = lowDB(path.join('data', 'db.json'));
   // get data from form
   var title = req.body.title;
   console.log("***", title)
@@ -93,6 +90,7 @@ router.post('/I_am_trying', function(req, res) {
 })
 
 router.post('/I_cry_tears_of_pain', function(req, res) {
+  var db = lowDB(path.join('data', 'db.json'));
   // get data from form
   var title = req.body.title;
   var new_title = req.body.new_song;
