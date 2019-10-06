@@ -13,6 +13,7 @@ var flash = require('connect-flash');
 
 
 var serverSide = require('./serverSide');
+var reaction = require('./views/reaction');
 
 var app = express();
 app.set('view engine', 'ejs');
